@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node": "^20.4.0"
+  },
+  "type": "module",
+  "name": "stock-finder",
+  "version": "1.0.0",
+  "description": "A function that turns stock names into links with their corresponding purchase links through EasyEquities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tristan Savage",
+  "license": "ISC"
+}
