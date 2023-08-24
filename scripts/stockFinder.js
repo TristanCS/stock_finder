@@ -1,6 +1,6 @@
 // variables & constants;
-const url =
-  "https://platform.easyequities.io/ValueAllocation/Buy?contractCode=";
+// TODO: tradingCurrencyID
+const url = `https://platform.easyequities.io/ValueAllocation/Buy?contractCode=`;
 const path = "./data/ShareData.json";
 
 async function findStock(path) {
