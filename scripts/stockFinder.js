@@ -1,5 +1,5 @@
 // variables & constants;
-// TODO: tradingCurrencyID
+// TODO: tradingCurrencyID. Awaiting implementation.
 const url = `https://platform.easyequities.io/ValueAllocation/Buy?contractCode=`;
 const path = "./data/ShareData.json";
 
@@ -16,11 +16,12 @@ async function findStock(path) {
       instrumentName = stocks[i].InstrumentName;
       contractCode = stocks[i].ContractCode;
       regex = new RegExp(instrumentName, "g");
+
+      document.body.innerHTML = document.body.innerHTML.replace(
+        regex,
+        `<a href=${url + contractCode} target="_">${instrumentName}</a>`
+      );
     }
-    document.body.innerHTML = document.body.innerHTML.replace(
-      regex,
-      `<a href=${url + contractCode} target="_">${instrumentName}</a>`
-    );
   }
 }
 
